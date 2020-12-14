@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+--black:#211f23;
+--gradient:linear-gradient(to left,#bc89ff 0%,#8b7fff 100%);
+--pink:#bc89ff;
+--silver:#666;
+--white:#fff;
+--whiteopacty:rgba(255,255,255,.7);
+--darck:#29272b;
+--shadow-normal:
+7px 5px 10px #2b2d2f,
+-7px -5px -10px #3b3d3f;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    background-color:var(--darck);
+    -webkit-font-smoothing:antialiased;
+}
+
+p{
+    font-weight: 300;
+    color: var(--silver);
+    font-size: 16px;
+    line-height: 26px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+button{
+    border: none;
+}
+button,input,textarea{
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-md-4{
+flex-basis: 31%;
+}
+.col-md-6{
+    flex-basis: 48%;
+}
+
+/*headerconst*/
+
+.headerconst {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.headerconst .title{
+    text-transform: uppercase;
+    color: var(--whte);
+    margin-bottom: 8px;
+}
+
+/*button*/
+.buttonborder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0px 16px;
+    height: 48px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--pink);
+    text-transform: uppercase;
+    border: solid 2px var(--pink);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+.buttonborder:hover{
+    color: var(--darck);
+    background: var(--pink);
+
+}
+
+@keyframes topdonw{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(2rem);
+    }
+}
+
+@keyframes LeftRight{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(2rem);
+    }
+}
+@keyframes scale{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.move{
+    animation: topdonw 2s infinite alternate;
+}
+.moveleft{
+    animation: LeftRight 2s infinite alternate;
+}
+
+.rotate{
+    animation: rotate 10s infinite alternate;
+    animation-delay: 15s;
+}
+.scale{
+    animation: scale 10s infinite alternate;
+    animation-delay: 15s;
+}
