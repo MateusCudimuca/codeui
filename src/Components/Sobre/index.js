@@ -2,12 +2,10 @@ import React from 'react';
 
 import Header from "../Header";
 import Footer from "../Footer";
-import { FaReact,FaAngular,FaVuejs } from "react-icons/fa";
 import Layout1 from "../../assets/layout-1.png";
 import Layout2 from "../../assets/layout-2.png";
 import './style.css';
 // import { Container } from './styles';
-
 const Sobre = () =>(
 
 <>
